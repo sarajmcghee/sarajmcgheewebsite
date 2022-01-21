@@ -18,7 +18,7 @@ class App extends Component {
                 {/* <img src={logo} alt="loading..." /> */}
                 <div className="container">
                 <div className="row">
-                <div className="col-xs-5 m-auto">
+                <div className="m-auto">
                 <BodyComponent/>
                 </div>
                 </div>
