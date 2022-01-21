@@ -31,11 +31,12 @@ body {
   text-align: center;
 
 }
+/* 
 html {
   background-image:url('/public/assets/images/background.PNG');
   background-size: 100%;
   opacity: 0.7;
-}
+}  */
 
 .footer {
   background-color: white;
@@ -47,3 +48,22 @@ html {
   font-size: 25px;
 }
 
+.selectableImg {
+  border: solid 1px transparent;
+  margin: 10px;
+}
+
+.selectableImg.selected {
+  border: solid 1px blue;
+}
+
+.body_image{
+  height:800px;
+  width:auto;
+ }
+ .container{
+  background-color: gray;
+  background-image:url('/public/assets/images/background.PNG');
+  background-size: 100%;
+
+ }
