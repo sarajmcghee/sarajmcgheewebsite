@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import Link from 'react';
-import { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle } from 'reactstrap';
-import lion from '../assets/images/lion.png'
+import DrawingComponent from "./DrawingComponent";
+import WeeklyUpdateComponent from "./WeeklyUpdateComponent";
 
 
 class BodyComponent extends Component {
@@ -16,18 +15,27 @@ class BodyComponent extends Component {
     render() {
 
         return (
+            <div className="container">
+                                <div className= "row p-5">
 
+</div>
+                <div className="row justify-content-md-center">
+                    <div class="col col-lg-8">
+                        <DrawingComponent />
+                    </div>
+                </div>
+                <div className= "row p-4">
 
-                <Card>
-                    <CardImg top src={lion} alt="lion" className="body_image" />
-                     {/* <a style={{ display: "table-cell" }} rel="noreferrer" href="https://www.linkedin.com/in/sara-mcghee/" target="_blank" > <img class="body_image" src={lion} alt="loading..." /></a> */}
+                </div>
+                <div className="row justify-content-md-center">
+                <div class="col col-lg-8">
+                    <WeeklyUpdateComponent />
+                    </div>
+                </div>
+                <div className= "row p-5">
 
-                </Card>
-
-
-                       
-                
-
+</div>
+            </div>
         );
     }
 }

@@ -18,10 +18,10 @@ body {
   background-color: white; 
 }
 
-.navbar-nav > li {
+/* .navbar-nav > li {
   padding-left: 50px;
   padding-right: 50px; 
-}
+} */
   
 .navItem {
   color: rgb(0, 0, 0);
@@ -31,12 +31,7 @@ body {
   text-align: center;
 
 }
-/* 
-html {
-  background-image:url('/public/assets/images/background.PNG');
-  background-size: 100%;
-  opacity: 0.7;
-}  */
+
 
 .footer {
   background-color: white;
@@ -60,10 +55,4 @@ html {
 .body_image{
   height:800px;
   width:auto;
- }
- .container{
-  background-color: gray;
-  background-image:url('/public/assets/images/background.PNG');
-  background-size: 100%;
-
  }

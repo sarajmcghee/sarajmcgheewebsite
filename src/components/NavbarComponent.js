@@ -14,16 +14,14 @@ class Navigation extends Component {
     render() {
 
         return (
-            <div className="container">
+            <div>
                 <Navbar color="light" variant="light" light>
-                    <Nav className="ml-auto">
+                <Nav className="mr-auto">
+                <NavbarBrand >Sara McGhee</NavbarBrand>
+                </Nav>
+                    <Nav className="ml-auto fs-5">
                         <NavbarBrand href="/">Projects</NavbarBrand>
-                        <NavbarBrand href="/">About Me</NavbarBrand>
-                        {/* <div className="input-group">
-                            <input type="search" className="form-control rounded" placeholder="Search"
-                                aria-label="Search" aria-describedby="search-addon" />
-                            <button type="button" className="btn btn-outline-secondary">search</button>
-                        </div> */}
+                        <NavbarBrand href="/">About</NavbarBrand>
                     </Nav>
                 </Navbar>
             </div>
