@@ -16,6 +16,7 @@ const App = () => {
         // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
         // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
         // starting from v2 you can add only the features you need reducing the bundle size
+
         await loadFull(main);
     };
 
@@ -24,6 +25,7 @@ const App = () => {
     };
     return (
         <div className="App" >
+            
             <Particles
                 id="tsparticles"
                 init={particlesInit}
@@ -36,6 +38,7 @@ const App = () => {
                             value: "#FFFFFF",
                             
                          },
+
                     },
                     fpsLimit: 120,
                     interactivity: {

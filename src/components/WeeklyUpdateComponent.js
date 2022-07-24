@@ -16,7 +16,9 @@ class WeeklyUpdateComponent extends Component {
     render() {
 
         return (
+            
             <div className="d-inline text-dark">
+                
             The Road Not Taken <br/>
             BY ROBERT FROST<br/>
             Two roads diverged in a yellow wood,<br/>
