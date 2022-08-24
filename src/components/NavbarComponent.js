@@ -16,9 +16,9 @@ class Navigation extends Component {
         return (
             <div>
                 <Navbar color="light" variant="light" light>
-                <Nav className="mr-auto">
-                <NavbarBrand >Sara McGhee</NavbarBrand>
-                </Nav>
+                    <Nav className="mr-auto">
+                        <NavbarBrand >Sara McGhee</NavbarBrand>
+                    </Nav>
                     <Nav className="ml-auto fs-5">
                         <NavbarBrand href="/">Projects</NavbarBrand>
                         <NavbarBrand href="/">About</NavbarBrand>

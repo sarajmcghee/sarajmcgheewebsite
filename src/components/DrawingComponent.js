@@ -28,11 +28,6 @@ const items = [
         src: summer,
         altText: 'Slide 3',
 
-    },
-    {
-        src: me,
-        altText: 'Slide 4',
-
     }
 
 ];

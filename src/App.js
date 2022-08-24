@@ -134,9 +134,11 @@ const App = () => {
                     detectRetina: true,
                 }}
             />
+                        <BodyComponent />
             <Navigation />
-            <BodyComponent />
             <Footer />
+
+
         </div>
     );
 };
