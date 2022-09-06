@@ -28,7 +28,7 @@ class WelcomeComponent extends Component {
                             </div>
                             <div class="col alight-self-center">
                                 {/* <Media object src={me} alt='me' /> */}
-                                <Media object src={Closeup} alt='closeup' />
+                                {/* <Media object src={Closeup} alt='closeup' /> */}
                             </div>
                         </div>
                     </div>
