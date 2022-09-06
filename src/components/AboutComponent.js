@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 
-import { CardGroup, Jumbotron, Button } from 'reactstrap';
-
-
 
 class About extends Component {
     constructor(props) {
