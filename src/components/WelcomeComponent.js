@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Jumbotron, Container, Media } from 'reactstrap';
 
 import me from '../assets/images/me.jpeg';
-
+import Closeup from '../assets/images/Closeup.jpg';
 
 class WelcomeComponent extends Component {
     constructor(props) {
@@ -27,7 +27,8 @@ class WelcomeComponent extends Component {
                                 <p className="bottomlead text-dark">I'm passionate about cutting-edge innovations and interfaces that have a simple but intuative user experience.</p>
                             </div>
                             <div class="col alight-self-center">
-                                <Media object src={me} alt='me' />
+                                {/* <Media object src={me} alt='me' /> */}
+                                <Media object src={Closeup} alt='closeup' />
                             </div>
                         </div>
                     </div>
