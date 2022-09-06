@@ -2,12 +2,15 @@ import React, { Component } from 'react';
 import Navigation from './components/NavbarComponent';
 import Footer from "./components/FooterComponent";
 import BodyComponent from "./components/BodyComponent";
+import About from "./components/BodyComponent";
+import WeeklyUpdateComponent from "./components/WeeklyUpdateComponent";
 import Particles from 'react-tsparticles';
 import { loadFull } from "tsparticles";
+import { Route, Routes } from 'react-router-dom';
 
-import spaceBackground from './assets/images/background.PNG'
 
 import './App.css';
+
 
 const App = () => {
     const particlesInit = async (main) => {
@@ -32,10 +35,10 @@ const App = () => {
                 loaded={particlesLoaded}
                 options={{
                     background: {
-                        image: "url('https://particles.js.org/images/background3.jpg')",
+                       // image: "url('https://particles.js.org/images/background3.jpg')",
                          color: {
                        
-                            value: "#FFFFFF",
+                            value: "#000000",
                             
                          },
 
@@ -78,12 +81,12 @@ const App = () => {
                     },
                     particles: {
                         color: {
-                            //   value: "#ffffff",
-                            value: "#000000",
+                               value: "#000000",
+                            
                         },
                         links: {
                             //   color: "#ffffff",
-                            color: "#000000",
+                            color: "#808080",
                             distance: 150,
                             enable: true,
                             opacity: 0.5,
@@ -124,9 +127,9 @@ const App = () => {
                         cover: {
                           color: {
                             value: {
-                              r: 0,
-                              g: 0,
-                              b: 0
+                                "r": 255,
+                                "g": 255,
+                                "b": 255
                             }
                           }
                         }
@@ -134,9 +137,13 @@ const App = () => {
                     detectRetina: true,
                 }}
             />
-                       
             <Navigation />
-            <BodyComponent />
+            {/* <BodyComponent /> */}
+            <Routes>                
+             <Route path='/weeklyupdate' element={<WeeklyUpdateComponent/>}/>  
+             <Route path='/about' element={<About/>}/>  
+             <Route path='/' element={<BodyComponent/>}/>            
+          </Routes>
             <Footer />
 
 

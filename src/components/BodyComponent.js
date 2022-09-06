@@ -26,13 +26,13 @@ class BodyComponent extends Component {
                 <div className="row p-5">
                 </div>
                 <div className="row justify-content-md-center">
-                    <div class="col justify-self-center">
+                    <div className="col justify-self-center">
                         <WelcomeComponent />
                     </div>
                 </div>
                 <div className="row p-5">
                 </div>
-                <div className="row justify-content-md-center">
+                {/* <div className="row justify-content-md-center">
                     <div class="col col-lg-8">
                         <DrawingComponent />
                     </div>
@@ -47,7 +47,7 @@ class BodyComponent extends Component {
                 </div>
                 <div className="row p-5">
 
-                </div>
+                </div> */}
             </div>
         );
     }
