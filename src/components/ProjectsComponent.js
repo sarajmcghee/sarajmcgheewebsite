@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 
-import { CardGroup, Jumbotron, Button } from 'reactstrap';
 
-
-
-class WeeklyUpdateComponent extends Component {
+class ProjectsComponent extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -16,7 +13,10 @@ class WeeklyUpdateComponent extends Component {
     render() {
 
         return (
+            
             <div>
+                            <div className="jumbotron jumbotron-billboard">
+            <div className="col align-center"></div>
                 <div className="d-inline text-dark">
 
                     The Road Not Taken <br />
@@ -45,8 +45,10 @@ class WeeklyUpdateComponent extends Component {
                     I took the one less traveled by,<br />
                     And that has made all the difference.</div>
             </div>
+            </div>
+            
         );
     }
 }
 
-export default WeeklyUpdateComponent;
+export default ProjectsComponent;

@@ -1,12 +1,15 @@
-import React, { Component } from 'react';
-import Navigation from './components/NavbarComponent';
-import Footer from "./components/FooterComponent";
-import BodyComponent from "./components/BodyComponent";
-import About from "./components/BodyComponent";
-import WeeklyUpdateComponent from "./components/WeeklyUpdateComponent";
+import React from 'react';
+
 import Particles from 'react-tsparticles';
 import { loadFull } from "tsparticles";
-import { Route, Routes } from 'react-router-dom';
+
+import { BrowserRouter as Router } from "react-router-dom";
+
+import Main from './components/HomeComponent';
+import Navigation from './components/NavbarComponent';
+import Footer from "./components/FooterComponent";
+import RouterURL from "./router/RouterURL";
+
 
 
 import './App.css';
@@ -28,19 +31,19 @@ const App = () => {
     };
     return (
         <div className="App" >
-            
+
             <Particles
                 id="tsparticles"
                 init={particlesInit}
                 loaded={particlesLoaded}
                 options={{
                     background: {
-                       // image: "url('https://particles.js.org/images/background3.jpg')",
-                         color: {
-                       
+                        // image: "url('https://particles.js.org/images/background3.jpg')",
+                        color: {
+
                             value: "#000000",
-                            
-                         },
+
+                        },
 
                     },
                     fpsLimit: 120,
@@ -63,16 +66,16 @@ const App = () => {
                             grab: {
                                 distance: 400,
                                 lineLinked: {
-                                  opacity: 1
+                                    opacity: 1
                                 }
-                              },
+                            },
                             bubble: {
                                 distance: 400,
                                 size: 100,
                                 duration: 2,
                                 opacity: 1,
                                 speed: 2
-                              },
+                            },
                             repulse: {
                                 distance: 200,
                                 duration: 0.4,
@@ -81,8 +84,8 @@ const App = () => {
                     },
                     particles: {
                         color: {
-                               value: "#000000",
-                            
+                            value: "#000000",
+
                         },
                         links: {
                             //   color: "#ffffff",
@@ -125,48 +128,31 @@ const App = () => {
                     backgroundMask: {
                         enable: true,
                         cover: {
-                          color: {
-                            value: {
-                                "r": 255,
-                                "g": 255,
-                                "b": 255
+                            color: {
+                                value: {
+                                    "r": 255,
+                                    "g": 255,
+                                    "b": 255
+                                }
                             }
-                          }
                         }
-                      },
+                    },
                     detectRetina: true,
                 }}
             />
-            <Navigation />
-            {/* <BodyComponent /> */}
-            <Routes>                
-             <Route path='/weeklyupdate' element={<WeeklyUpdateComponent/>}/>  
-             <Route path='/about' element={<About/>}/>  
-             <Route path='/' element={<BodyComponent/>}/>            
-          </Routes>
-            <Footer />
+
+
+
+            <Router>
+                <Navigation />
+                    <RouterURL />
+                <Footer />
+            </Router>
 
 
         </div>
     );
 };
 
-
-
-
-
-// class App extends Component {
-
-//     render() {
-
-//         return (
-//             <div className="App" >
-//                 <Navigation />
-//                 <BodyComponent />
-//                 <Footer />
-//             </div>
-//         );
-//     }
-// }
 
 export default App;

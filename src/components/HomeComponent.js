@@ -1,16 +1,12 @@
-import React, { Component, ImageBackground } from 'react';
+import React, { Component } from 'react';
 
-import DrawingComponent from "./DrawingComponent";
-import WeeklyUpdateComponent from "./WeeklyUpdateComponent";
+
 import WelcomeComponent from "./WelcomeComponent";
-import { Card, CardImg, CardImgOverlay, CardTitle, Jumbotron, Button, Container } from 'reactstrap';
 
 
-import banner from '../assets/images/background.PNG';
-import me from '../assets/images/me.jpeg';
 
 
-class BodyComponent extends Component {
+class Home extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -53,4 +49,4 @@ class BodyComponent extends Component {
     }
 }
 
-export default BodyComponent;
+export default Home;
