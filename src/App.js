@@ -9,13 +9,15 @@ import Main from './components/HomeComponent';
 import Navigation from './components/NavbarComponent';
 import Footer from "./components/FooterComponent";
 import RouterURL from "./router/RouterURL";
-
+import TagManager from 'react-gtm-module';
 
 
 import './App.css';
 
 
 const App = () => {
+
+
     const particlesInit = async (main) => {
         console.log(main);
 
@@ -25,10 +27,16 @@ const App = () => {
 
         await loadFull(main);
     };
+    // const tagManagerArgs = {
+    //     gtmId: 'G-6SDWWLTNHZ'
+    // };
 
+    // TagManager.initialize(tagManagerArgs);
+    
     const particlesLoaded = (container) => {
         console.log(container);
     };
+    
     return (
         <div className="App" >
 
