@@ -10,22 +10,25 @@ import {
 import lion from '../assets/images/lion.png'
 import parrot from '../assets/images/parrot.jpg'
 import me from '../assets/images/me.jpeg'
-import king from '../assets/images/king.jpeg'
-import summer from '../assets/images/summerRomance.jpeg'
+import snoops from '../assets/images/snoops.jpg'
+import bridge from '../assets/images/bridge.jpg'
+
+
+
 
 const items = [
     {
-        src: parrot,
+        src: bridge,
         altText: 'Slide 1',
 
     },
     {
-        src: king,
+        src: snoops,
         altText: 'Slide 2',
 
     },
     {
-        src: summer,
+        src: bridge,
         altText: 'Slide 3',
 
     }

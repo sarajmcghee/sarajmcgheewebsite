@@ -23,7 +23,7 @@ class Navigation extends Component {
 
         return (
             <div>
-                <Navbar color="faded" light="true" sticky="top" expand="md" >
+                <Navbar color="faded" light sticky="top" expand="md" >
                     <NavbarBrand className="nav-link" href="/">Sara McGhee</NavbarBrand>
                     <NavbarToggler onClick={this.toggleNav} />
                     <Collapse isOpen={this.state.isNavOpen} navbar>
